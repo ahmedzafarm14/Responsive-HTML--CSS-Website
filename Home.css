@@ -29,8 +29,29 @@ body{
     display: flex;
 }
 .bottom{
-    background: lightgray;
+    background: rgb(206, 204, 204);
 }
+.BNavigation{
+    display: flex;
+    background:  rgba(21, 21, 165, 0.692) ;
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.BNavigation button{
+    border: none;
+    background: none;
+    padding: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    color:white;
+}
+.botimg{
+    display: flex;
+}
+
 @media screen and (max-width: 480px) {
     .top{
         width: 100%;
@@ -80,12 +101,28 @@ body{
         height: 50px;
     }
     .bottom{
-        height: 450px;
+        height: 480px;
         width: 79%;
         margin-top: -18px;
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 20px;
+    }
+    .bImg{
+        margin-left: 60px;
+    }
+    .BNavigation p{
+        margin-top: -1px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    .img4{
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+    }
+    .botimg{
+        font-size: 7px;
     }
 
 }
