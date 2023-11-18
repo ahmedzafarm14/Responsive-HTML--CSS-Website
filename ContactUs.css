@@ -1,6 +1,5 @@
 body{
     width: 100%;
-    font-size: 12px;
     text-align: justify;
 }
 .top{
@@ -34,14 +33,11 @@ body{
     background:  rgba(21, 21, 165, 0.692) ;
     color: white;
     font-size: 12px;
-    padding-top: 5px;
 }
 
 .BNavigation button{
     border: none;
     background: none;
-    padding: 3px;
-    margin-left: 10px;
     cursor: pointer;
     font-size: 11px;
     color:white;
@@ -66,8 +62,23 @@ input[type="submit"]:hover {
     border: 2px rebeccapurple solid;
 
 }
+.form label::after {
+    content: '*';
+    color: red;
+}
+.contact a{
+    color: orangered;
+    text-decoration: none;
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 380px) and (max-width: 480px) {
+    .BNavigation{
+        padding-top: 5px;
+    }
+    .BNavigation button{
+        padding: 3px;
+        margin-left: 10px;
+    }
     .top{
         width: 100%;
         height: 30px;
@@ -112,21 +123,266 @@ input[type="submit"]:hover {
     .centerContact{
         margin-left: 60px;
         margin-right: 60px;
-        height: 450px;
+        height: 580px;
     }
     .mn{
         margin-top: 25px;
     }
     .contact{
         width:173px;
-        height: 300px;
-        border: solid red;
+        height: 300px; 
+        padding-left: 15px;
+    }
+    .contact img{
+        width: 140px;
+        height: 140px
     }
     .form{
         width:173px;
         height: 300px;
-        border: solid red;
+        padding-right: 5px;
+    }
+    .form label::after {
+        margin-left: 5px;
+    }
+
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {
+    .BNavigation{
+        padding-top: 5px;
+    }
+    .BNavigation button{
+        padding: 3px;
+        margin-left: 10px;
+    }
+    .top{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        position: relative;
+    }
+    .topImg{
+        margin-left: 600px;
+        margin-top: 5px;
+    }
+    .top p{
+        color: white;
+        position: absolute;
+        bottom: -10px;
+        left: 80px;
+    }
+    .Navigation{
+        height: 50px;
+    }
+    .Navigation button{
+        font-size: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .butt{
+        margin-left: 255px;
+    }
+    .bbutt{
+        margin-left: 70px;
     }
     
-
+    .bImg{
+        margin-left: 240px;
+    }
+    .BNavigation p{
+        margin-top: -1px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    .belowNav{
+        height: 80px;
+        padding-top: 1px;
+        padding-left: 80px;
+    }
+    .centerContact{
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 530px;
+    }
+    .mn{
+        margin-top: 25px;
+    }
+    .contact{
+        width:260px;
+        height: 370px; 
+        padding-left: 20px;
+        line-height: 22px;
+        word-spacing: 4px;
+    }
+    .contact img{
+        width: 170px;
+        height: 150px
+    }
+    .form{
+        width:300px;
+        height: 370px;
+        padding-right: 5px;
+    }
+    .form label::after {
+        margin-left: 5px;
+    }
+    .form label {
+        display: inline;
+    }
+    
+    #fullName,#email,#telephone,#Subject,#Inquiry{
+        width: 55%;
+        margin-bottom: 20px;
+    }
+    #fullName{
+        margin-left: 25px;
+    }
+    #email{
+        margin-left: -1px;
+    }
+    #telephone{
+        margin-left: 22px;
+    }
+    #Subject{
+        margin-left: 45px;
+    }
+    #Inquiry{
+        margin-left: 115px;
+    }
+    .form textarea {
+        width: 55%;
+        margin-bottom: 20px;
+        margin-left: 85px;
+        margin-top: 5px;
+    }
+    input[type="submit"]{
+        width: 70px;
+        height: 30px;
+        margin-left: 115px;
+    }
+}
+@media screen and (min-width: 761px) and (max-width: 1368px) {
+    body{
+        width: 100%;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .BNavigation{
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    .BNavigation button{
+        padding: 3px;
+        margin-left: 30px;
+    }
+    .top{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        position: relative;
+    }
+    .topImg{
+        margin-left: 1060px;
+        margin-top: 15px;
+        padding-left: 5px;
+    }
+    .topImg img{
+        padding-left: 15px;
+    }
+    .top p{
+        color: white;
+        position: absolute;
+        left: 135px;
+    }
+    .Navigation{
+        height: 75px;
+    }
+    .Navigation button{
+        font-size: 14px;
+        padding: 17px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .butt{
+        margin-left: 425px;
+    }
+    
+    .bImg{
+        margin-left: 575px;
+    }
+    .bImg img{
+        padding-left: 15px;
+    }
+    .BNavigation p{
+        margin-top: 2px;
+        margin-left: 30px;
+    }
+    .bbutt{
+        margin-left: 105px;
+        text-align: justify;
+    }
+    .belowNav{
+        height: 75px;
+        padding-top: 1px;
+        padding-left: 135px;
+    }
+    .centerContact{
+        margin-left: 135px;
+        margin-right: 135px;
+        height: 480px;
+    }
+    .mn{
+        margin-top: 25px;
+    }
+    .contact{
+        width:260px;
+        height: 370px; 
+        padding-left: 20px;
+        line-height: 22px;
+        word-spacing: 4px;
+    }
+    .contact img{
+        width: 170px;
+        height: 150px
+    }
+    .form{
+        width:500px;
+        height: 370px;
+        padding-right: 5px;
+    }
+    .form label::after {
+        margin-left: 5px;
+    }
+    .form label {
+        display: inline;
+    }
+    
+    #fullName,#email,#telephone,#Subject,#Inquiry{
+        width: 55%;
+        margin-bottom: 20px;
+    }
+    #fullName{
+        margin-left: 25px;
+    }
+    #email{
+        margin-left: 3px;
+    }
+    #telephone{
+        margin-left: 23px;
+    }
+    #Subject{
+        margin-left: 43px;
+    }
+    #Inquiry{
+        margin-left: 105px;
+    }
+    .form textarea {
+        width: 55%;
+        margin-top: 5px;
+    }
+    input[type="submit"]{
+        width: 70px;
+        height: 30px;
+        margin-left: 105px;
+    }
 }
