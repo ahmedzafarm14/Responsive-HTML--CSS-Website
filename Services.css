@@ -18,18 +18,11 @@ body{
     font-size: 16px;
     color:white;
 }
-.container{
-    background: white;
-    box-shadow: 0px 8px 20px 1px rgb(14 14 14 / 42%);
-}
 .Navigation button:hover{
     color: orange;
 }
 .BNavigation button:hover{
     color: orange;
-}
-.centerImg{
-    display: flex;
 }
 .bottom{
     background: rgb(206, 204, 204);
@@ -71,7 +64,52 @@ body{
 .bnav button:hover{
     color: orangered;
 }
+.imgg{
+    position: absolute;
+}
+.txtimg{
+    position: relative;
+    text-wrap: 20px;
+}
+.centre a{
+    text-decoration: none;
+    color: orangered;
+}
+.listimg{
+    display: flex;
+}
+.imggg{
+    background: gainsboro;
+    border-radius: 10px;
+}
 @media screen and (min-width: 380px) and (max-width: 480px) {
+    .imgg img{
+        width:180px;
+        height:160px;
+    }
+    .imgg{
+        width:180px;
+        height:160px;
+        margin-left: 235px
+    }
+    .centre{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .imggg{
+        background: gainsboro;
+        border-radius: 20px;
+        width: 225px;
+        height: 130px;
+        font-size: 11px;
+        margin-left: 30px;
+        padding: 5px;
+        margin-top: 15px
+    }
+    .list{
+        width: 250px;
+        height:200px;
+    }
     .bnav{
         margin-left: 35px;
     }
@@ -167,6 +205,41 @@ body{
 
 }
 @media screen and (min-width: 481px) and (max-width: 760px){
+    .imgg img{
+        width:200px;
+        height:160px;
+    }
+    .imgg{
+        width:200px;
+        height:160px;
+        margin-left: 410px
+    }
+    .centre{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .imggg{
+        background: gainsboro;
+        border-radius: 20px;
+        width: 225px;
+        height: 130px;
+        font-size: 11px;
+        margin-left: 30px;
+        padding: 5px;
+        margin-top: 15px
+    }
+    .list{
+        width: 250px;
+        height:200px;
+    }
+    .bnav{
+        margin-left: 80px;
+    }
+    .bnav p{
+        width: 260px;
+        height: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
+    }
     .BNavigation{
         padding-top: 5px;
     }
@@ -220,8 +293,40 @@ body{
     }
 }
 @media screen and (min-width: 761px) and (max-width: 1368px){
+    .imgg img{
+        width:200px;
+        height:160px;
+    }
+    .imgg{
+        width:200px;
+        height:160px;
+        margin-left: 900px;
+    }
+    .centre{
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    .imggg{
+        background: gainsboro;
+        border-radius: 20px;
+        width: 250px;
+        height: 150px;
+        font-size: 12px;
+        margin-left: 400px;
+        padding: 5px;
+        margin-top: 15px;
+    }
+    .list{
+        width: 250px;
+        height:200px;
+    }
     .bnav{
-        margin-left: 13px;
+        margin-left: 135px;
+    }
+    .bnav p{
+        width: 320px;
+        height: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
     }
     body{
         width: 100%;
