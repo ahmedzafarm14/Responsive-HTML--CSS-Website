@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="ContactUs.css">
-    <title>CONTACT US</title>
+    <link rel="stylesheet" type="text/css" href="Services.css">
+    <title>SERVICES</title>
 </head>
 <body>
     <div class="top">
@@ -27,9 +27,9 @@
         </div>
         <script>
             function nextPage(id) {
-                if(id==1 || id==5)
+                if(id==1 || id==5 || id==11)
                 {   window.location.href = 'Home.html';     }
-                else if(id==2 || id==6)
+                else if(id==2 || id==6 || id==12)
                 {    window.location.href = 'Services.html';    }
                 else if(id==3 || id==5)
                 {    window.location.href = 'Reports.html';    }
@@ -38,8 +38,14 @@
             }
         </script>
     </nav>
+    <div class="belowNav">
+        <h1>IT AND ACCOUNTING SERVICES</h1>
+    </div>
     <div class="centerContact">
-        
+        <div class="bnav">
+            <button type="button" id="11" onclick="nextPage(id)">HOME > </button> <button type="button" id="12" onclick="nextPage(id)">SERVICES</button>
+            <p>One Stop Soluton For all IT and Accounting Services</p>
+        </div>
     </div>
     <nav class="BNavigation">
         <div class="bbutt">

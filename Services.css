@@ -1,0 +1,291 @@
+body{
+    width: 100%;
+    font-size: 12px;
+    text-align: justify;
+}
+.top{
+    background: black;
+}
+.Navigation{
+    background: rgba(21, 21, 165, 0.692);
+}
+.Navigation button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color:white;
+}
+.container{
+    background: white;
+    box-shadow: 0px 8px 20px 1px rgb(14 14 14 / 42%);
+}
+.Navigation button:hover{
+    color: orange;
+}
+.BNavigation button:hover{
+    color: orange;
+}
+.centerImg{
+    display: flex;
+}
+.bottom{
+    background: rgb(206, 204, 204);
+}
+.BNavigation{
+    display: flex;
+    background:  rgba(21, 21, 165, 0.692) ;
+    color: white;
+    font-size: 12px;
+}
+.belowNav{
+    background:  rgba(11, 11, 214, 0.781) ;
+    color: white;
+}
+
+.BNavigation button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 11px;
+    color:white;
+}
+.botimg{
+    display: flex;
+}
+.bnav p{
+    color: white;
+    background: rgb(0, 0, 255);
+
+}
+.bnav button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 11px;
+    color:rgb(29, 28, 28);
+    flex-direction: row;
+}
+.bnav button:hover{
+    color: orangered;
+}
+@media screen and (min-width: 380px) and (max-width: 480px) {
+    .bnav{
+        margin-left: 35px;
+    }
+    .bnav p{
+        width: 260px;
+        height: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
+    }
+    .BNavigation button{
+        padding: 3px;
+        margin-left: 10px;
+    }
+    .top{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        position: relative;
+    }
+    .topImg{
+        margin-left: 330px;
+        margin-top: 5px;
+    }
+    .top p{
+        color: white;
+        position: absolute;
+        bottom: -10px;
+        left: 35px;
+    }
+    .Navigation{
+        height: 50px;
+    }
+    .Navigation button{
+        font-size: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .butt{
+        margin-left: 100px;
+    }
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 800px;
+    }
+    .container img{
+        width:380px;
+        height:120px;
+        margin-top: 5px;
+    }
+    .img2{
+        width: 100px;
+        height: 100px;
+        text-align: end;
+        font-size: 9px;
+    }
+    .img2 img{
+        width: 100%;
+        height: 50px;
+    }
+    .bottom{
+        height: 480px;
+        width: 79%;
+        margin-top: -18px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    .bImg{
+        margin-left: 60px;
+    }
+    .BNavigation{
+        padding-top: 5px;
+    }
+    .BNavigation p{
+        margin-top: -1px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    .img4{
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+    }
+    .botimg{
+        font-size: 7px;
+    }
+    .belowNav{
+        height: 60px;
+        padding-top: 1px;
+        padding-left: 42px;
+        font-size: 11px;
+    }
+
+}
+@media screen and (min-width: 481px) and (max-width: 760px){
+    .BNavigation{
+        padding-top: 5px;
+    }
+    .BNavigation button{
+        padding: 3px;
+        margin-left: 10px;
+    }
+    .top{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        position: relative;
+    }
+    .topImg{
+        margin-left: 600px;
+        margin-top: 5px;
+    }
+    .top p{
+        color: white;
+        position: absolute;
+        bottom: -10px;
+        left: 80px;
+    }
+    .Navigation{
+        height: 50px;
+    }
+    .Navigation button{
+        font-size: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .butt{
+        margin-left: 255px;
+    }
+    .bbutt{
+        margin-left: 70px;
+    }
+    
+    .bImg{
+        margin-left: 240px;
+    }
+    .BNavigation p{
+        margin-top: -1px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+    .belowNav{
+        height: 80px;
+        padding-top: 1px;
+        padding-left: 80px;
+    }
+}
+@media screen and (min-width: 761px) and (max-width: 1368px){
+    .bnav{
+        margin-left: 13px;
+    }
+    body{
+        width: 100%;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .BNavigation{
+        padding-top: 5px;
+        font-size: 14px;
+    }
+    .BNavigation button{
+        padding: 3px;
+        margin-left: 30px;
+    }
+    .top{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        position: relative;
+    }
+    .topImg{
+        margin-left: 1060px;
+        margin-top: 15px;
+        padding-left: 5px;
+    }
+    .topImg img{
+        padding-left: 15px;
+    }
+    .top p{
+        color: white;
+        position: absolute;
+        left: 135px;
+    }
+    .Navigation{
+        height: 75px;
+    }
+    .Navigation button{
+        font-size: 14px;
+        padding: 17px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .butt{
+        margin-left: 425px;
+    }
+    
+    .bImg{
+        margin-left: 600px;
+    }
+    .bImg img{
+        padding-left: 15px;
+    }
+    .BNavigation p{
+        margin-top: 2px;
+        margin-left: 30px;
+    }
+    .bbutt{
+        margin-left: 105px;
+        text-align: justify;
+    }
+    .belowNav{
+        height: 75px;
+        padding-top: 1px;
+        padding-left: 135px;
+    }
+    
+}
