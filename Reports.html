@@ -1,11 +1,199 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reports</title>
+    <link rel="stylesheet" href="Reports.css" type="text/CSS">
 </head>
 <body>
-    <img src="./images/reports.jpg" alt="reports.jpg">
+    <div class="top">
+        <div class="txt">
+            <p>Call Now: 00912-5533-93390</p>
+        </div>
+       <div class="topImg">
+            <a href="https://www.x.com" target="_blank" rel="noopener"><img src="./images/twIcon.jpg" alt="Twitter Icon.png"></a> 
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="./images/fbIcon.jpg" alt="FaceBook Icon.png"></a>
+            <a href="https://www.google.com" target="_blank" rel="noopener"><img src="./images/gmailIcon.jpg" alt="Google Plus Icon.png"></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="./images/linkedInIcon.jpg" alt="LimkedIN.png"></a>
+       </div>
+    </div>
+    <nav class="Navigation">
+        <div class="butt">
+            <button type="button" id="1" onclick="nextPage(id)">HOME</button>
+            <button type="button" id="2" onclick="nextPage(id)">SERVICES</button>
+            <button type="button" id="3" onclick="nextPage(id)">REPORTS</button>
+            <button type="button" id="4" onclick="nextPage(id)">CONTACT<br>US</button>
+        </div>
+        <script>
+            function nextPage(id) {
+                if(id==1 || id==5)
+                {   window.location.href = 'Home.html';     }
+                else if(id==2 || id==6)
+                {    window.location.href = 'Services.html';    }
+                else if(id==3 || id==5)
+                {    window.location.href = 'Reports.html';    }
+                else
+                {    window.location.href = 'ContactUs.html';    }
+            }
+        </script>
+    </nav>
+
+    <div class="main-container">
+        <div class="outer-container">
+            <div class="inner-container">
+                <h4>Reports Dashboard</h4>
+                <div class="reports">
+                    <div class="three-report-div First-report">
+                        <h3>Reports On:</h3>
+                        <div class="S-input">
+                            <label for="allPosition">All Position</label>
+                            <input type="checkbox" name="option1" id="allPosition" value="all">
+                        </div>
+                        <div class="S-input">
+                            <label for="openPosition">Open Positions</label>
+                            <input type="checkbox" name="openPosition" id="openPosition" value="open"> 
+                        </div>
+                        <div class="S-input">
+                            <label for="filledPosition">Fill Positions</label>
+                            <input type="checkbox" name="filledPosition" id="filledPosition"value="filled">
+                        </div>
+                        <div class="S-input">
+                            <label for="closedPositions">Closed Positions</label>
+                            <input type="checkbox" name="ClosedPositions" id="closedPositions" value="closed">
+                        </div>
+                    </div>
+                    <div class="three-report-div Second-report">
+                        <h3>Report For:</h3>
+                        <div class="r-input">
+                            <label for="companies">Company</label>
+                            <select id="companies" name="companies" required>
+                                <option value="" selected disabled>All Companies</option>
+                                <option value="ZNZSoftwares">ZNZ Softwares</option>
+                                <option value="DevSinc">Dev Sinc</option>
+                                <option value="mindbridge">Mind Bridge</option>
+                                <option value="ArbiSoft">Arbi Soft</option>
+                            </select>
+                        </div>
+                        <div class="r-input">
+                            <label for="businessUnits">Business Unit</label>
+                            <select id="businessUnits" name="businessUnits" required>
+                                <option value="" selected disabled>All Business Units</option>
+                                <option value="Tech">Technology Division</option>
+                                <option value="Marketing">Marketing Solutions</option>
+                                <option value="Financial">Financial Services</option>
+                                <option value="RnD">Research and Development</option>
+                                <option value="Global">Global Operations</option>
+                                <option value="Product">Product Development</option>
+                                <option value="HR">Human Resources</option>
+                                <option value="Sales">Sales and Distribution</option>
+                            </select>
+                        </div>
+                        <div class="r-input">
+                            <label for="departments">Department</label>
+                            <select id="departments" name="departments" required>
+                                <option value="" selected disabled>All Departments</option>
+                                <option value="Software">Software Development</option>
+                                <option value="DigitalMarketing">Digital Marketing</option>
+                                <option value="AccountingFinance">Accounting and Finance</option>
+                                <option value="Innovation">Innovation</option>
+                                <option value="LogisticsSupplyChain">Logistics and Supply Chain</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="TalentAcquisition">Talent Acquisition</option>
+                                <option value="SalesOperations">Sales Operations</option>
+                                <option value="CustomerSupport">Customer Support</option>
+                                <option value="QualityControl">Quality Control</option>
+                            </select>
+                        </div>
+                        <div class="r-input">
+                            <label for="recruiters">Recruiter</label>
+                            <select id="recruiters" name="recruiters" required>
+                                <option value="" selected disabled>All Recruiters</option>
+                                <option value="EmilyAnderson">Emily Anderson</option>
+                                <option value="JonathanMiller">Jonathan Miller</option>
+                                <option value="SarahJohnson">Sarah Johnson</option>
+                                <option value="AlexTurner">Alex Turner</option>
+                                <option value="RachelParker">Rachel Parker</option>
+                                <option value="MichaelReed">Michael Reed</option>
+                                <option value="MeganCollins">Megan Collins</option>
+                                <option value="DavidMartinez">David Martinez</option>
+                                <option value="JessicaCarter">Jessica Carter</option>
+                                <option value="BrianFoster">Brian Foster</option>
+                            </select>
+                        </div>
+                        <div class="r-input">
+                            <label for="recruiterPositions">Recruiter Position</label>
+                            <select id="recruiterPositions" name="recruiterPositions" required>
+                                <option value="" selected disabled></option>
+                                <option value="SeniorTalentAcquisition">Senior Talent Acquisition Specialist</option>
+                                <option value="RecruitmentManager">Recruitment Manager</option>
+                                <option value="HRCoordinator">HR Coordinator</option>
+                                <option value="LeadRecruiter">Lead Recruiter</option>
+                                <option value="RecruitmentSpecialist">Recruitment Specialist</option>
+                                <option value="HRDirector">HR Director</option>
+                                <option value="CampusRecruitmentManager">Campus Recruitment Manager</option>
+                                <option value="TalentAcquisitionPartner">Talent Acquisition Partner</option>
+                                <option value="SeniorHRConsultant">Senior HR Consultant</option>
+                                <option value="RecruitmentTeamLead">Recruitment Team Lead</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="three-report-div">
+                        <label for="fromdate"><h3>Report from:</h3></label>
+                        <input type="date" name="fromdate" id="fromdate">
+                        <label for="fromdatee"><h3>Report To:</h3></label>
+                        <input type="date" name="fromdate" id="fromdatee">
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="three-box-container">
+                        <div class="threebox">
+                            <h4>Total Number of Positions</h4>
+                            <p>27</p>
+                        </div>
+                        <div class="threebox">
+                            <h4>Total Number of Candidates</h4>
+                            <p>150</p>
+                        </div>
+                        <div class="threebox">
+                            <h4>Everage Number of Candidates per Position</h4>
+                            <p>4.92</p>
+                        </div>
+                    </div>
+                    <div class="three-box-container">
+                        <div class="threebox">
+                            <h4>Total Number of Interviews Conducted</h4>
+                            <p>133</p>
+                        </div>
+                        <div class="threebox">
+                            <h4>Average Number of Interview per Candiadte</h4>
+                            <p>3.14</p>
+                        </div>
+                        <div class="threebox">
+                        <h4>Everage Candidate Rating</h4>
+                        <p>2.35</p>
+                        </div>
+                    </div>
+                    <div class="box-three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="BNavigation">
+        <div class="bbutt">
+            <button type="button" id="5" onclick="nextPage(id)">HOME</button>
+            <button type="button" id="6" onclick="nextPage(id)">SERVICES</button>
+            <button type="button" id="7" onclick="nextPage(id)">REPORTS</button>
+            <button type="button" id="8" onclick="nextPage(id)">CONTACT US</button>
+            <br>
+            <p>© All Rights Reserved</p>
+        </div>
+        <div class="bImg">
+            <a href="https://www.x.com" target="_blank" rel="noopener"><img src="./images/twIcon.jpg" alt="Twitter Icon.png"></a> 
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="./images/fbIcon.jpg" alt="FaceBook Icon.png"></a>
+            <a href="https://www.google.com" target="_blank" rel="noopener"><img src="./images/gmailIcon.jpg" alt="Google Plus Icon.png"></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="./images/linkedInIcon.jpg" alt="LimkedIN.png"></a>
+       </div>
+    </nav>
 </body>
 </html>
